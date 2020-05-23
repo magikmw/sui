@@ -2,6 +2,7 @@
 *a startpage for your server and / or new tab page*
 
 ![screenshot](https://i.imgur.com/J4d7Q3D.png)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmagikmw%2Fsui.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmagikmw%2Fsui?ref=badge_shield)
 
 [More screenshots](https://imgur.com/a/FDVRIyw)
 
@@ -104,3 +105,7 @@ I might add a simpler way to edit themes at some point, but adding the current o
 
 * Search function key `/` opens QuickSearch instead while using Firefox  
 You can probably change the QuickSearch key using an extension, otherwise the sui search key can be set by editing file `assets/js/script.js` on [THIS LINE](https://github.com/magikmw/sui/blob/a502822e3f42ed15e37b8ef9546304c5b6bd41d4/assets/js/search.js#L56) (if using docker make sure you edit it before building an image or build again).
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmagikmw%2Fsui.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmagikmw%2Fsui?ref=badge_large)
