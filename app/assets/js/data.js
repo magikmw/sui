@@ -1,4 +1,7 @@
-var data_links = "links.json";
+var data_links = "config/links.json";
+var data_apps = "config/apps.json";
+var data_providers = "config/providers.json";
+
 var bookmarks = JSON.parse(localStorage.getItem("links"));
 
 function handleLinks(data) {
@@ -21,8 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-var data_apps = "apps.json";
-
 document.addEventListener("DOMContentLoaded", function () {
   fetch(data_apps)
   .then( response => response.json())
@@ -34,8 +35,6 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("apps").innerHTML = myresult;
     });
 });
-
-var data_providers = "providers.json";
 
 document.addEventListener("DOMContentLoaded", function () {
   fetch(data_providers)
