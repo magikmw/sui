@@ -1,0 +1,16 @@
+---
+version: "2"
+services:
+  sui:
+    container_name: sui 
+    build:
+      context: ./
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/New_York
+    #volumes:
+    #  - ./config:/opt/html/config
+    ports:
+      - 4000:80
+    restart: unless-stopped

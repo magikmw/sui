@@ -28,6 +28,22 @@ Please note:
  - You can change host's port (`4000`) to any valid port you may want
  - You can use `--user` switch in your `docker run` command to run the process as a different user
 
+##### Docker Compose
+
+Clone/download the repository, then run the `docker-compose` command:
+
+```
+git clone https://github.com/magikmw/sui.git
+cd sui
+docker-compose up -d --build
+```
+
+To retain configuration during updates and ensure that changes can be made without requiring a rebuild of the container, complete the following steps:
+
+ - Create a `config` directory in the root project folder
+ - Copy all the configuration files from `app/config` and modify as needed
+ - Uncomment the volume mount in `docker-compose.yml`. This mounts the created `config` directory to the configuration directory on the container
+ 
 ### Customization
 
 #### Changing color themes
