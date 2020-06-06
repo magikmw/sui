@@ -91,13 +91,8 @@ Please note:
 
 
 #### Color themes
-These can be added or customized in the themer.js file. When changing the name of a theme or adding one, make sure to edit this section in index.html accordingly:
 
-```
-    <section  class="themes">
-```
-
-I might add a simpler way to edit themes at some point, but adding the current ones should be pretty straight forward.
+These can be added or customized in the `themes.js` configuration file.
 
 
 ### Known Issues
