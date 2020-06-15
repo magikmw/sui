@@ -85,8 +85,8 @@
                             <span class="iconify icon" data-icon="mdi-{{icon}}"></span>
                         </div>
                         <div class="apps_text">
-                            <a href="https://{{url}}">{{name}}</a>
-                            <span id="app-address">{{url}}</span>
+                            <a href="{{addprotocol url}}">{{name}}</a>
+                            <span id="app-address">{{cleanurl url}}</span>
                         </div>
                     </div>
                 {{/apps}}
@@ -117,6 +117,7 @@
         </a>
     </div>
 
+    <script src="./assets/js/helpers.js" type="text/javascript"></script>
     <script src="./assets/js/data.js" type="text/javascript"></script>
     <script src="./assets/js/script.js" type="text/javascript"></script>
     <script src="./assets/js/themer.js" type="text/javascript"></script>
